@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 
-const API_KEY = "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"
+const API_KEY = process.env.OPENAI_API_KEY
 
 const App = () => {
   const [messages, setMessages] = useState([
